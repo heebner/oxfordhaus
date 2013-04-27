@@ -1,0 +1,105 @@
+/**
+ * Parallax Scrolling Tutorial
+ * For Smashing Magazine
+ * July 2011
+ *  
+ * Author: Richard Shepherd
+ *		   www.richardshepherd.com
+ * 		   @richardshepherd   
+ */
+
+
+article h2 { font-family: 'Hill House'; font-size: 60px; margin: 25px 0; line-height: 1em; }
+
+.story { 
+	height: 2200px; 
+	padding: 0; 
+	margin: 0; 
+	width: 100%; 
+	max-width: 2920px; 
+	position: relative; 
+	margin: 0 auto; 
+}
+
+#first { background: url(../images/horizontal_wood.jpg) 0 0 no-repeat fixed; }
+#second { background: url(../images/horizontal_wood.jpg) 0 0 no-repeat fixed; }
+#fourth { background: url(../images/horizontal_wood.jpg) 0 0 no-repeat fixed; }
+#third { background: url(../images/horizontal_wood.jpg) 0 bottom no-repeat fixed; }
+
+
+.oxfordhauslogo { 
+	background: url(../images/logo.png) 50% 100px no-repeat fixed; 
+	min-height: 90%; 
+	padding: 0; 
+	margin: 0; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	margin: 0 auto; 
+}
+
+.plane{
+	background: url(../images/plane_small.png) 0 0 no-repeat fixed;
+	width: 400px;
+	height: 185px;
+}
+
+
+/* Introduction */
+#first article { 
+	width: 100%; 
+	top: 50px; 
+	position: absolute; 
+	text-align: center; 
+}
+#first article p,
+#first article a { 
+	color: #ccc; 
+}
+#first article a { 
+	text-decoration: underline; 
+}
+#first article a:hover { 
+	color: #fff; 
+}
+
+/* Background Only */
+#second.story { 
+	height: 1200px;
+}
+
+#second article { 
+	color: #fff; 
+	margin-left: 200px; 
+	padding: 10px 20px; 
+	line-height: 1.5em; 
+}
+#second article p { 
+	margin-bottom: 25px; 
+}
+#second article a { 
+	color: #ff0;
+}
+
+
+/* Background Only */
+#third.story { 
+	height: 400px;
+}
+#third article { 
+	background-image: url(../images/plane_small.png);
+	background-repeat: no-repeat;
+	color: #fff; 
+	width: 800px; 
+	height: 200px;
+	margin-left: 90%; 
+	padding: 10px 20px; 
+
+}
+#thid article p { 
+	margin-bottom: 25px; 
+}
+#third article a { 
+	color: #ff0;
+}
+
