@@ -3,60 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>Oxford Haus</title>
-  <meta name="description" content="How to create a parallax scrolling effect with jQuery, HTML and CSS">
-  <meta name="author" content="Richard Shepherd, Smashing Magazine">
+  <meta name="description" content="Photography + Identity + Design">
+  <meta name="author" content="Oxford Haus">
 
   <!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
-  <link href='http://fonts.googleapis.com/css?family=Hill+House' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="image_src" href="images/thumb.png">
+
+
+  <meta property="og:title" content="Oxford Haus" />
+  <meta property="og:type" content="website" />       
+  <meta property="og:image" content="http://oxfordhaus.com/images/thumb.png" />      
+  <meta property="og:url" content="http://oxfordhaus.com" />
+  <meta property="og:description" content="Photography + Identity + Design" />
 </head>
 
 <body>
 
-  <div id="main" role="main">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<!-- Section #1 / Intro -->
-	<section id="first" class="story" data-speed="4" data-type="background">  
-    <div class="oxfordhauslogo"  data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-10"></div> 		
-      <article>
-      </article>
-	</section>
+    ga('create', 'UA-40507212-1', 'oxfordhaus.com');
+    ga('send', 'pageview');
 
-	<!-- Section #2 / Background Only -->
-	<section id="second" class="story" data-speed="4" data-type="background">
-      <article>
-        <img name="web" src="images/web.png" width="515" height="481" border="0" usemap="#m_web" alt="">
+  </script>
+
+  <div id="wrapper">
+    <div id="scroller">
+      <section>
+      <div id="oxfordhauslogo" data-stellar-ratio="-2" data-stellar-vertical-offset="10" ></div>	
+      <div id="web" data-stellar-ratio="2" data-stellar-vertical-offset="300">
+        <img id="web-image" name="web" src="images/web.png" width="515" height="481" border="0" usemap="#m_web" alt="">
         <map name="m_web">
           <area shape="circle" coords="471,99, 43" href="http://instagram.com/oxfordhaus" target="_blank" alt="" >
           <area shape="circle" coords="473,368, 45" href="http://twitter.com/oxfordhaus" target="_blank" alt="" >
-          <area shape="circle" coords="43,437, 43" href="mailto:denise@oxfordhaus.com" title="denise@oxfordhaus.com" alt="denise@oxfordhaus.com" >
+          <area shape="circle" coords="43,437, 43" href="mailto:denise@oxfordhaus.com" title="denise@oxfordhaus.com" alt="denise@oxfordhauslogoordhaus.com" >
           <area shape="circle" coords="54,52, 45" href="http://open.spotify.com/user/dmheebner/playlist/2CsVCvH8CNIOHhXpjMPDNu" target="_blank" alt="" >
         </map>
-  		</article>
-	</section>
-
-  <!-- Section #2 / Background Only -->
-  <section id="third" class="story" data-speed="4" data-type="background">
-    <article>
-      <!--<div class="plane" data-type="sprite" data-Xposition="50%" data-speed="-10"></div>-->
-    </article>
-  </section>
-
-
+      </div>
+      <div id="plane" data-stellar-ratio="2" data-stellar-vertical-offset="300"></div>
+    </section>
+    </div> <!-- End of iscroll -->
   </div> <!-- // End of #main -->
-
-
 
   <!-- Our Javascript, starting with jQuery -->
   <script src='js/libs/jquery-2.0.0.min.js'></script>
   <script src="js/script.js"></script>
-  <script src="js/libs/jquery.backstretch.min.js"></script>
-  <script src="js/libs/jquery.zoomooz.min.js"></script>
-  <script src="js/libs/jquery.scrollpath.min.js"></script>
   <script src="js/libs/jquery.stellar.min.js"></script>
+  <script src="js/libs/iscroll.js"></script>
 
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>

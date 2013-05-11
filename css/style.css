@@ -11,95 +11,88 @@
 
 article h2 { font-family: 'Hill House'; font-size: 60px; margin: 25px 0; line-height: 1em; }
 
-.story { 
-	height: 2200px; 
-	padding: 0; 
-	margin: 0; 
-	width: 100%; 
-	max-width: 2920px; 
-	position: relative; 
-	margin: 0 auto; 
+body {
+	background-image: url('../images/horizontal_wood.jpg');
 }
 
-#first { background: url(../images/horizontal_wood.jpg) 0 0 no-repeat fixed; }
-#second { background: url(../images/horizontal_wood.jpg) 0 0 no-repeat fixed; }
-#fourth { background: url(../images/horizontal_wood.jpg) 0 0 no-repeat fixed; }
-#third { background: url(../images/horizontal_wood.jpg) 0 bottom no-repeat fixed; }
-
-
-.oxfordhauslogo { 
-	background: url(../images/logo.png) 50% 100px no-repeat fixed; 
-	min-height: 90%; 
-	padding: 0; 
-	margin: 0; 
-	width: 100%; 
-	max-width: 1920px; 
-	position: relative; 
-	margin: 0 auto; 
+.mobile body {
+  overflow: hidden;
 }
 
-.plane{
-	background: url(../images/plane_small.png) 0 0 no-repeat fixed;
-	width: 400px;
-	height: 185px;
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-
-/* Introduction */
-#first article { 
-	width: 100%; 
-	top: 50px; 
-	position: absolute; 
-	text-align: center; 
-}
-#first article p,
-#first article a { 
-	color: #ccc; 
-}
-#first article a { 
-	text-decoration: underline; 
-}
-#first article a:hover { 
-	color: #fff; 
+.mobile #scroller {
+  height: 1000px;
 }
 
-/* Background Only */
-#second.story { 
-	height: 1200px;
+#wrapper {
+	height: 1620px;
+	width: 100%;
+	position: relative;
 }
 
-#second article { 
-	color: #fff; 
-	margin-left: 200px; 
-	padding: 10px 20px; 
-	line-height: 1.5em; 
-}
-#second article p { 
-	margin-bottom: 25px; 
-}
-#second article a { 
-	color: #ff0;
+#oxfordhauslogo { 
+	background: url(../images/logo.png) no-repeat center;
+	margin: 0 auto;
+	max-width: 656px;
+	width: 656px;
+	max-height: 616px;
+	height: 616px;
+	position: relative;	 
 }
 
-
-/* Background Only */
-#third.story { 
-	height: 400px;
+.mobile #web {
+	margin-top: 150px;
 }
-#third article { 
-	background-image: url(../images/plane_small.png);
+#web {
+	max-width: 515px;
+	width: 515px;
+	max-height: 481px;
+	height: 481px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#web-image{
+	max-height: 481px;
+	max-width: 515px;
+}
+
+.web-link {
+	cursor: hand;
+	cursor: pointer;
+	border-radius: 100px;
+	max-width: 90px;
+	width: 90px;
+	max-height: 90px;
+	height: 90px;
+	position: relative;
+}
+
+.mobile #plane {
+	background: url(../images/balloons.png) no-repeat center;
+	max-width: 299px;
+	max-height: 681px;
+	width: 299px;
+	height: 681px;
+	margin: 150px auto;
+}
+
+#plane{
+	background: url(../images/plane_small.png);
 	background-repeat: no-repeat;
-	color: #fff; 
-	width: 800px; 
-	height: 200px;
-	margin-left: 90%; 
-	padding: 10px 20px; 
-
-}
-#thid article p { 
-	margin-bottom: 25px; 
-}
-#third article a { 
-	color: #ff0;
+	background-size: 850px 185px;
+	max-width: 850px;
+	width: 850px;
+	max-height: 185px;
+	height: 185px;
+	margin: 0 100%;
+	position: relative;
 }
 

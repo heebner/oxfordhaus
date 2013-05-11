@@ -1,0 +1,67 @@
+.site-page {
+	background: url(../../images/horizontal_wood.jpg) no-repeat fixed;
+}
+
+#content {
+	position: relative;
+	display: table-cell;
+}
+
+#logo {
+	background: url(../../images/logo.png) no-repeat center;
+	margin: auto auto;
+	max-width: 656px;
+	width: 656px;
+	max-height: 616px;
+	height: 616px;
+	background-position: 50% 50%;
+}
+
+#web {
+	margin: auto auto;
+	max-width: 515px;
+	width: 515px;
+	max-height: 481px;
+	height: 481px;
+}
+
+#web-image {
+	vertical-align: middle;
+	margin: auto auto;
+}
+
+#balloon {
+	background: url(../../images/balloons.png) no-repeat center;
+	max-width: 299px;
+	max-height: 681px;
+	width: 299px;
+	height: 681px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+#balloon-content {
+	padding: 0px 0px 0px 0px;
+	overflow: visible;
+}
+
+#next {
+	background: url(../../images/hand_right.png) no-repeat center;
+	max-width: 100px;
+	max-height: 51px;
+	width: 100px;
+	height: 51px;
+	margin: 0 auto;
+	float: right;
+	overflow: visible;
+	padding-bottom: 10px;
+}
+
+#previous {
+	max-width: 100px;
+	max-height: 51px;
+	width: 100px;
+	height: 51px;
+	margin: 0 auto;
+	float: left;
+}
